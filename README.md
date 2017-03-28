@@ -20,3 +20,9 @@ limitations under the License.
 <b>[Apache Phoenix](http://phoenix.apache.org/)</b> is a SQL skin over HBase delivered as a client-embedded JDBC driver targeting low latency queries over HBase data. Visit the Apache Phoenix website <b>[here](http://phoenix.apache.org/)</b>.
 
 Copyright ©2014 [Apache Software Foundation](http://www.apache.org/). All Rights Reserved. 
+
+> This project is derived from the project chiastic-security/phoenix-for-cloudera.
+
+The master branch is based on the Apache Phoenix 4.10.0. 
+
+You should checkout the branch [4.10-HBase-1.2-cdh5.10](https://github.com/joinany/phoenix-for-cloudera/tree/4.10-HBase-1.2-cdh5.10) for Cloudera.
