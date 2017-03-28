@@ -1,0 +1,18 @@
+{
+    "lastUpdated": 14905728000000,
+    "parcels": [
+        {
+            "parcelName": "PHOENIX-4.10.0-1.cdh5.10.0.p0.000-el6.parcel",
+            "components": [
+                {
+                    "pkg_version": "4.10.0+cdh5.10.0+0",
+                    "pkg_release": "1.cdh5.10.0.p0.2",
+                    "name": "phoenix",
+                    "version": "4.10.0-cdh5.10.0"
+                }
+            ],
+            "depends": "CDH (>= 5.10), CDH (<< 6.0)",
+            "hash": "895edc93aba81afa10f7365a62005d4d3214a640"
+        }
+    ]
+}

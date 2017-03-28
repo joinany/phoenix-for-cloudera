@@ -1,0 +1,34 @@
+{
+    "groups": [], 
+    "extraVersionInfo": {
+        "baseVersion": "4.10.0", 
+        "fullVersion": "4.10.0-1.cdh5.10.0.p0.000-el6", 
+        "patchCount": "0"
+    }, 
+    "components": [
+        {
+            "pkg_version": "4.10.0+cdh5.10.0+0", 
+            "version": "4.10.0-cdh5.10.0", 
+            "name": "phoenix", 
+            "pkg_release": "1.cdh5.10.0.p0.2"
+        }
+    ], 
+    "scripts": {
+        "defines": "phoenix_env.sh"
+    }, 
+    "schema_version": 1, 
+    "name": "PHOENIX", 
+    "depends": "CDH (>= 5.10), CDH (<< 6.0)", 
+    "version": "4.10.0-1.cdh5.10.0.p0.000", 
+    "provides": [
+        "hbase-plugin"
+    ], 
+    "setActiveSymlink": true, 
+    "packages": [
+        {
+            "version": "4.10.0+cdh5.10.0+0", 
+            "name": "phoenix"
+        }
+    ], 
+    "users": {}
+}
