@@ -28,25 +28,38 @@ Copyright ©2014 [Apache Software Foundation](http://www.apache.org/). All Right
 The master branch is based on the Apache Phoenix 4.10.0. You should checkout the branch 4.10-HBase-1.2-cdh5.10 for Cloudera.
 
 To build the jars
+
     $ mvn clean package
+
 and optionally, to just skip all the tests and build the jars:
+
     $ mvn clean package -DskipTests
 
 # How to create parcel for Cloudera
 
-There is a folder PHOENIX-4.10.0-1.cdh5.10.0.p0.000 in parcel/. 
-* Uncompress the files to PHOENIX-4.10.0-1.cdh5.10.0.p0.000/lib/phoenix/
-    tar -zxvf phoenix-assembly/target/phoenix-4.10.0-cdh5.10.0.tar.gz
-    mv phoenix-4.10.0-cdh5.10.0/* PHOENIX-4.10.0-1.cdh5.10.0.p0.000/lib/phoenix/
-* Create the parcel file
-    tar -zcvf PHOENIX-4.10.0-1.cdh5.10.0.p0.000-el6.parcel PHOENIX-4.10.0-1.cdh5.10.0.p0.000/ --owner=root --group=root
-* Create sha1 file
-    # Echo the command output to the sha1 file
-    sha1sum PHOENIX-4.10.0-1.cdh5.10.0.p0.000-el6.parcel
-        895edc93aba81afa10f7365a62005d4d3214a640
-    echo "895edc93aba81afa10f7365a62005d4d3214a640" > PHOENIX-4.10.0-1.cdh5.10.0.p0.000-el6.parcel.sha1
-* Define manifest.json based on the file in parcel/
-* Copy the three files to the Cloudera repository
+There is a folder PHOENIX-4.10.0-1.cdh5.10.0.p0.000 in parcel/.
+
+Uncompress the files to PHOENIX-4.10.0-1.cdh5.10.0.p0.000/lib/phoenix/
+
+    $ tar -zxvf phoenix-assembly/target/phoenix-4.10.0-cdh5.10.0.tar.gz
+    $ mv phoenix-4.10.0-cdh5.10.0/* PHOENIX-4.10.0-1.cdh5.10.0.p0.000/lib/phoenix/
+
+Define parcel.json and filelist.json in PHOENIX-4.10.0-1.cdh5.10.0.p0.000/meta/ as required
+
+Create the parcel file
+
+    $ tar -zcvf PHOENIX-4.10.0-1.cdh5.10.0.p0.000-el6.parcel PHOENIX-4.10.0-1.cdh5.10.0.p0.000/ --owner=root --group=root
+
+Create sha1 file
+
+    $ sha1sum PHOENIX-4.10.0-1.cdh5.10.0.p0.000-el6.parcel
+      895edc93aba81afa10f7365a62005d4d3214a640
+    $ echo "895edc93aba81afa10f7365a62005d4d3214a640" > PHOENIX-4.10.0-1.cdh5.10.0.p0.000-el6.parcel.sha1
+
+Define manifest.json in parcel/ as required
+
+Copy the three files to the Cloudera repository
+
     PHOENIX-4.10.0-1.cdh5.10.0.p0.000-el6.parcel
     PHOENIX-4.10.0-1.cdh5.10.0.p0.000-el6.parcel.sha1
     manifest.json
