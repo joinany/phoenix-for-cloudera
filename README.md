@@ -21,8 +21,6 @@ limitations under the License.
 
 Copyright ©2014 [Apache Software Foundation](http://www.apache.org/). All Rights Reserved. 
 
-> This project is derived from the project chiastic-security/phoenix-for-cloudera.
+> This project is derived from the project [chiastic-security/phoenix-for-cloudera](https://github.com/chiastic-security/phoenix-for-cloudera).
 
-The master branch is based on the Apache Phoenix 4.10.0. 
-
-You should checkout the branch [4.10-HBase-1.2-cdh5.10](https://github.com/joinany/phoenix-for-cloudera/tree/4.10-HBase-1.2-cdh5.10) for Cloudera.
+The master branch is based on the Apache Phoenix 4.10.0. You should checkout the branch [4.10-HBase-1.2-cdh5.10](https://github.com/joinany/phoenix-for-cloudera/tree/4.10-HBase-1.2-cdh5.10) for Cloudera.
