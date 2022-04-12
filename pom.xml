@@ -66,7 +66,7 @@
 
     <!-- Hadoop Versions -->
     <hbase.version>1.2.3</hbase.version>
-    <hadoop-two.version>2.7.1</hadoop-two.version>
+    <hadoop-two.version>3.2.3</hadoop-two.version>
 
     <!-- Dependency versions -->
     <commons-cli.version>1.2</commons-cli.version>
